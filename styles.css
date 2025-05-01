@@ -1,0 +1,344 @@
+:root {
+  --blue-light: #9FB3DF;
+  --peach: #FFF1D5;
+  --blue-medium: #9EC6F3;
+  --blue-soft: #BDDDE4;
+  --light-gray:#d3d3d3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE STYLES */
+body {
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: black;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,0.3) 21%, rgba(255,255,255,0.3) 34%, transparent 35%, transparent),
+    radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,0.3) 21%, rgba(255,255,255,0.3) 34%, transparent 35%, transparent) 0 -50px;
+  background-color: slategray;
+  background-size: 75px 100px;
+  background-repeat: repeat;
+}
+
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* HOME/MAIN PAGE */
+.hero-section {
+  background: url('images/swiss-valley.jpg') center center/cover no-repeat;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+.hero-overlay {
+  background-color: rgba(159, 179, 223, 0.6);
+  padding: 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 3rem;
+  text-align: center;
+  color: black;
+}
+
+/* NAME for Resort*/
+.hero-overlay h1 {
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+/* Hover features of nav links */
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #555;
+  text-decoration: underline;
+}
+
+/* Active Link*/
+.nav-links a.active {
+  color: #888;
+  font-weight: bold;
+}
+
+/* MAIN CONTENT */
+.intro {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.intro p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Content Groups */
+.content-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  padding: 4rem 2rem;
+}
+
+.content-item {
+  width: 300px;
+  text-align: center;
+  background-color: var(--light-gray); 
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+.content-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.content-item h3 {
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.content-item p {
+  font-size: 1rem;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #d3d3d3;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.site-footer hr {
+  margin: 1rem auto;
+  width: 100px;
+}
+
+.site-footer p {
+  margin: 0.5rem 0;
+}
+
+/* CONTACT PAGE */
+
+/* Header (for Contact Page) */
+.site-header {
+  background-color: white;
+  padding: 2rem;
+}
+
+.header-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header h1 {
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #555;
+  text-decoration: underline;
+}
+
+.nav-links a.active {
+  color: #888;
+  font-weight: bold;
+}
+/* Hero Image for Contact Page */
+.hero-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Contact Intro Section */
+.contact-intro {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.highlight-bar {
+  background-color: #a9a9a9;
+  width: 300px;
+  height: 30px;
+  margin: 0 auto 2rem auto;
+}
+
+.contact-left {
+  flex: 1 1 400px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-left h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-left p {
+  font-size: 1rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.contact-left img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Contact Section ) */
+.contact-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 4rem;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 960px;
+  margin: 4rem auto;
+}
+/* Contact Form */
+.contact-form {
+  flex: 1 1 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+/* Focus for Form */
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: 2px solid #a9a9a9;
+  background-color: #f0f0f0;
+}
+
+/* Invalid state for form*/
+.form-group input:invalid,
+.form-group textarea:invalid {
+  border-color: red;
+}
+
+/* Contact Image */
+.contact-image img {
+  flex: 1 1 400px;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+/* Submit Button */
+.submit-button {
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  background-color: var(--blue-medium);
+  color: black;
+  padding: 0.75rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Hover for Submit Button */
+.submit-button:hover,
+.submit-button:focus {
+  background-color: var(--blue-light);
+  outline: 2px solid black;
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--light-gray);
+  text-align: center;
+  padding: 2rem;
+}
+
+.site-footer hr {
+  width: 100px;
+  margin: 1rem auto;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Icicle Village</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- FAVICON  -->
+<link rel="apple-touch-icon" sizes="57x57" href="images/85a2b8b40a28dcf792449dba5970b71b.ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/85a2b8b40a28dcf792449dba5970b71b.ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/85a2b8b40a28dcf792449dba5970b71b.ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/85a2b8b40a28dcf792449dba5970b71b.ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/85a2b8b40a28dcf792449dba5970b71b.ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/85a2b8b40a28dcf792449dba5970b71b.ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/85a2b8b40a28dcf792449dba5970b71b.ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/85a2b8b40a28dcf792449dba5970b71b.ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/85a2b8b40a28dcf792449dba5970b71b.ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="images/85a2b8b40a28dcf792449dba5970b71b.ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/85a2b8b40a28dcf792449dba5970b71b.ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/85a2b8b40a28dcf792449dba5970b71b.ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/85a2b8b40a28dcf792449dba5970b71b.ico/favicon-16x16.png">
+<link rel="manifest" href="images/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="images/85a2b8b40a28dcf792449dba5970b71b.ico/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+<div class="container">
+
+<header class="site-header">
+    <div class="header-container">
+      <h1>Icicle Village</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Accommodations</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+</header>
+
+<div class="hero-image">
+    <img src="images/swiss-valley.jpg" alt="Scenic Mountain View with Trees and flowing mid river">
+</div>
+
+<main>
+  <section class="contact-main">
+   <div class="contact-left">
+      <h2>Contact Us</h2>
+        <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!  
+        Required fields marked with a *</p>
+        <img src="images/swiss-peak.jpg" alt="Snowy mountain with trees">
+      </div>
+    
+      <form class="contact-form" action="#" method="post">
+        <div class="form-group">
+          <label for="fullname">Full Name *</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+    
+        <div class="form-group">
+          <p>Preferred Contact Method *</p>
+          <label><input type="radio" name="contact-method" value="email" required> Email</label>
+          <label><input type="radio" name="contact-method" value="phone" required> Phone</label>
+        </div>
+    
+        <div class="form-group">
+          <label for="comments">Comments *</label>
+          <textarea id="comments" name="comments" rows="5" required></textarea>
+        </div>
+    
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+</section>    
+</main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>Copyright &copy;2023 - Icicle Village</p>
+    <p>This site is for educational purposes only</p>
+  </footer>
+</div>
+</body>
+</html>
